@@ -1,7 +1,7 @@
 <?php
-if(isset($_COOKIE["hamza"])){
-        $dates=unserialize($_COOKIE["hamza"]);
-        $name = "hamza";
+if(isset($_COOKIE["doha"])){
+        $dates=unserialize($_COOKIE["doha"]);
+        $name = "doha";
         $dates[]=time();
         setcookie(  $name ,serialize($dates));
       // print_r($dates);
@@ -15,7 +15,7 @@ if(isset($_COOKIE["hamza"])){
       }
       else{
         $dates[]=time();
-        $name = "hamza";
+        $name = "doha";
         setcookie(  $name ,serialize($dates));
         echo "C'est votre première visite : ".date("d-m-Y H:i:s",time());
       }
